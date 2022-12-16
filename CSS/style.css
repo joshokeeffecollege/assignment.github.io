@@ -1,0 +1,268 @@
+/* ----------
+WEBSITE
+----------- */
+body {
+  /* Variable required to override font set by Bootstrap */
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  font-family: "Inter", sans-serif;
+}
+
+#game-page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#index-page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* sets the background image */
+.hero-area,
+#form-page,
+#master {
+  background-image: url("/images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#form-page {
+  background-image: url("/images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Removes focus from around menu button when pressed */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.icon {
+  margin-right: 5px;
+}
+.navbar-text {
+  margin-right: 10px;
+}
+
+/* ----------
+HOME PAGE - Josh
+----------- */
+
+/* Centers  the icons above the columns*/
+.fa,
+.fa-house-laptop,
+.fa-images {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Centers and aligns the main image, h1 and tagline, as well as background image*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background-size: 100% 100%;
+}
+
+#home-page-heading {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Changes the color of the links in the columns and recolors them */
+#text-icon a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Centers and aligns the heading and tagline */
+.header-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 400px) {
+  .col-3 {
+    width: 25%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .div-section {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-device-width: 380px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .hero-area {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  #text-icon {
+    margin-top: 15px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    /* for desktops */
+    .col-3 {
+      width: 25%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+    .div-section {
+      margin-top: 100px;
+    }
+
+    #index-page {
+      overflow: hidden;
+      height: 100vh;
+    }
+  }
+}
+
+/* ----------
+FORM - Brad
+----------- */
+
+#form-page-form {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#form-page-info {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  width: 60%;
+}
+
+.form-page-input {
+  border: none;
+  border-bottom: 2px solid green;
+}
+
+input[type="submit"],
+[type="reset"] {
+  border: 2px solid green;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+/* ----------
+GALLERY - Matiss
+----------- */
+
+/* ----------
+GAME - Josh
+----------- */
+
+/* Creates a shadow on the button */
+.btn {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Changes the background color of the div and centers the content */
+.content {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Changes the background color of the div and centers the content */
+.game {
+  background-color: #f6f8fa;
+  border: 1px solid #d8dee4;
+  border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles the input */
+#guess {
+  margin: 0 auto 10px auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Give the main div height and width */
+.main {
+  max-height: 300px;
+  max-width: 600px;
+}
+
+/* Adds margin to the message of the output */
+#msg {
+  margin: 10px auto 20px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .game {
+    background-color: #f6f8fa;
+    max-width: 90%;
+    /* border: none;
+    box-shadow: none; */
+  }
+
+  #gamePlay {
+    background: rgb(125, 58, 180);
+    background: linear-gradient(
+      90deg,
+      rgba(125, 58, 180, 1) 0%,
+      rgba(252, 68, 68, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+  }
+}
