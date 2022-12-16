@@ -11,7 +11,7 @@ body {
 }
 
 #game-page {
-  overflow: hidden;
+  overflow: auto;
   height: 100vh;
 }
 
